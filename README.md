@@ -34,7 +34,8 @@ job-hunt/
 
 ```bash
 git clone https://github.com/your-username/job-hunt.git
-cd job-hunt```
+cd job-hunt
+```
 
 ### 2. Setup Environment Variables
 ---
