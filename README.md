@@ -9,3 +9,64 @@ This repository contains two separate applications:
 ---
 
 ## 📁 Project Structure
+job-hunt/
+├── README.md # Project documentation
+├── user-website/ # Next.js project for job seekers
+└── admin-dashboard/ # Next.js project for administrators
+
+---
+
+## 🚀 Tech Stack
+
+| Feature          | Tech Used            |
+|------------------|----------------------|
+| Framework        | Next.js              |
+| ORM              | Prisma               |
+| Database         | PostgreSQL           |
+| Image Storage    | Supabase (Public Storage) |
+| Styling (opt.)   | Tailwind CSS, etc.   |
+
+---
+
+## 🔧 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/job-hunt.git
+cd job-hunt```
+
+### 2. Setup Environment Variables
+---
+make .env file for each project /Job Hunt CMS and /Job Hunt Website.
+---
+***/Job Hunt CMS***
+---
+DATABASE_URL=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLIC_KEY=
+NEXTAUTH_SECRET=
+---
+***/Job Hunt Website***
+---
+POSTGRES_PRISMA_URL=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLIC_KEY=
+NEXTAUTH_SECRET=
+---
+### 3. Install Dependencies & Run
+---
+***/Job Hunt CMS***
+---
+cd ./Job Hunt CMS
+npm install
+npx prisma generate
+npm run dev
+---
+***/Job Hunt Website***
+---
+cd ./Job Hunt Website
+npm install
+npx prisma generate
+npm run dev
+---
