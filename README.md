@@ -8,9 +8,6 @@ This repository contains two separate applications:
 
 ---
 
-## 📁 Project Structure
-<pre> job-hunt/ ├── README.md ├── user-website/ # Website untuk user pencari kerja │ ├── public/ # Static files (images, favicon, etc) │ ├── src/ │ │ ├── pages/ # Next.js pages (routes) │ │ ├── components/ # Reusable UI components │ │ ├── lib/ # Helper functions (e.g. supabase client, prisma client) │ │ ├── styles/ # Global styles (CSS/Tailwind) │ │ └── ... # Lainnya │ ├── prisma/ # Prisma schema & migrations │ ├── .env # Environment variables │ ├── package.json │ └── ... │ └── admin-dashboard/ # Website admin (dashboard) ├── public/ ├── src/ │ ├── pages/ │ ├── components/ │ ├── lib/ │ ├── styles/ │ └── ... ├── prisma/ ├── .env ├── package.json └── ... </pre>
-
 ---
 
 ## 🚀 Tech Stack
@@ -21,7 +18,7 @@ This repository contains two separate applications:
 | ORM              | Prisma               |
 | Database         | PostgreSQL           |
 | Image Storage    | Supabase (Public Storage) |
-| Styling (opt.)   | Tailwind CSS, etc.   |
+| Styling (opt.)   | Tailwind CSS, Shadcn   |
 
 ---
 
@@ -35,36 +32,40 @@ cd job-hunt
 ```
 
 ### 2. Setup Environment Variables
----
+```bash
 make .env file for each project /Job Hunt CMS and /Job Hunt Website.
----
-***/Job Hunt CMS***
----
+
+Job Hunt CMS
 DATABASE_URL=
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_PUBLIC_KEY=
 NEXTAUTH_SECRET=
----
-***/Job Hunt Website***
----
+
+Job Hunt Website
 POSTGRES_PRISMA_URL=
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_PUBLIC_KEY=
 NEXTAUTH_SECRET=
----
+```
 ### 3. Install Dependencies & Run
----
-***/Job Hunt CMS***
----
+```bash
+/Job Hunt CMS
 cd ./Job Hunt CMS
 npm install
 npx prisma generate
 npm run dev
----
-***/Job Hunt Website***
----
+
+/Job Hunt Website
 cd ./Job Hunt Website
 npm install
 npx prisma generate
 npm run dev
----
+```
+
+
+
+
+## Authors
+
+- [@boysitorus](https://www.github.com/boysitorus)
+
