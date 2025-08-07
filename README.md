@@ -9,10 +9,7 @@ This repository contains two separate applications:
 ---
 
 ## 📁 Project Structure
-job-hunt/
-├── README.md # Project documentation
-├── user-website/ # Next.js project for job seekers
-└── admin-dashboard/ # Next.js project for administrators
+<pre> job-hunt/ ├── README.md ├── user-website/ # Website untuk user pencari kerja │ ├── public/ # Static files (images, favicon, etc) │ ├── src/ │ │ ├── pages/ # Next.js pages (routes) │ │ ├── components/ # Reusable UI components │ │ ├── lib/ # Helper functions (e.g. supabase client, prisma client) │ │ ├── styles/ # Global styles (CSS/Tailwind) │ │ └── ... # Lainnya │ ├── prisma/ # Prisma schema & migrations │ ├── .env # Environment variables │ ├── package.json │ └── ... │ └── admin-dashboard/ # Website admin (dashboard) ├── public/ ├── src/ │ ├── pages/ │ ├── components/ │ ├── lib/ │ ├── styles/ │ └── ... ├── prisma/ ├── .env ├── package.json └── ... </pre>
 
 ---
 
